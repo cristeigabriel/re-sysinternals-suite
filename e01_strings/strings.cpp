@@ -293,7 +293,7 @@ int wmain(int argc, wchar_t **argv) {
 
   if (Util::isWow64Process()) Util::disableWow64FileSystemRedirection();
 
-  const std::filesystem::path path = "..\\";
+  const std::filesystem::path path = argv[1];
   processInput(path, arguments);
 
   if (!s_foundAnyString)
